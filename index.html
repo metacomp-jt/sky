@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sky Innovation — Breaking Barriers, Connecting Global Markets</title>
-<script src="image-slot.js"></script>
 <style>
   :root {
     --gold: #cf9e4d;
@@ -66,7 +65,6 @@
   .hero-bg {
     position: absolute; inset: 0; z-index: 0;
   }
-  .hero-bg image-slot { width: 100%; height: 100%; display: block; }
   .hero-overlay {
     position: absolute; inset: 0; z-index: 1;
     background: linear-gradient(180deg, rgba(30,47,74,0.15) 0%, rgba(30,47,74,0.7) 70%, rgba(30,47,74,0.92) 100%);
@@ -153,13 +151,13 @@
   .stat-num { font-size: 44px; font-weight: 700; color: var(--blue); line-height: 1; margin-bottom: 6px; }
   .stat-label { font-size: 14px; color: var(--text-light); }
 
-  /* ─── SPLIT SECTION (image + text, alternating) ─── */
+  /* ─── SPLIT SECTION ─── */
   .split {
     display: grid; grid-template-columns: 1fr 1fr;
     min-height: 520px;
   }
   .split-image { position: relative; overflow: hidden; background: var(--cream); }
-  .split-image image-slot { width: 100%; height: 100%; display: block; }
+  .split-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .split-body {
     display: flex; flex-direction: column; justify-content: center;
     padding: 64px 72px;
@@ -204,7 +202,7 @@
     aspect-ratio: 4/3; overflow: hidden; position: relative;
     background: var(--cream);
   }
-  .svc-card-img image-slot { width: 100%; height: 100%; display: block; }
+  .svc-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .svc-card-body { padding: 28px 24px 32px; flex: 1; display: flex; flex-direction: column; }
   .svc-card-num {
     font-size: 12px; color: var(--gold); font-weight: 700;
@@ -267,7 +265,7 @@
   }
   .cta-btn:hover { background: var(--gold-light); color: var(--blue); }
   .cta-band-image { position: relative; overflow: hidden; background: var(--blue-dark); }
-  .cta-band-image image-slot { width: 100%; height: 100%; display: block; }
+  .cta-band-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
   /* ─── CONTACT ─── */
   .contact { background: var(--white); border-top: 1px solid var(--border); }
@@ -364,7 +362,7 @@
       <li><a href="#about">About Us</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="/cdn-cgi/l/email-protection#d3babdb5bc93a0b8aababdbdbca5b2a7babcbdfdb0bcbe" class="nav-cta-link">Email Us</a></li>
+      <li><a href="mailto:info@skyinnovation.com" class="nav-cta-link">Email Us</a></li>
     </ul>
   </div>
   <div class="nav-border"></div>
@@ -428,7 +426,7 @@
 <!-- ABOUT — SPLIT -->
 <div class="split" id="about">
   <div class="split-image">
-    <image-slot id="about-img" placeholder="Team photo or professional office setting" shape="rect" style="width:100%;height:100%;"></image-slot>
+    <img src="uploads/side-view-and-close-up-of-professional-handshake-o-2026-01-11-08-45-09-u....png" alt="Professional team" style="width:100%;height:100%;object-fit:cover;">
   </div>
   <div class="split-body fade-up">
     <div class="section-label">About Us</div>
@@ -489,7 +487,7 @@
     <div class="services-grid fade-up">
       <div class="svc-card">
         <div class="svc-card-img">
-          <image-slot id="svc-1" placeholder="Market analysis — charts, strategy session" shape="rect" style="width:100%;height:100%;"></image-slot>
+          <img src="uploads/img_v3_0211k_72957e4b-3ebb-4e82-8116-9175aaad3ahu.png" alt="Market Entry Consulting">
         </div>
         <div class="svc-card-body">
           <div class="svc-card-num">01</div>
@@ -499,7 +497,7 @@
       </div>
       <div class="svc-card">
         <div class="svc-card-img">
-          <image-slot id="svc-2" placeholder="Branding — creative workshop, mood boards" shape="rect" style="width:100%;height:100%;"></image-slot>
+          <img src="uploads/img_v3_0211k_d92b18fc-92af-45c8-9f18-f16c5ccd70hu.png" alt="Cross-border Marketing">
         </div>
         <div class="svc-card-body">
           <div class="svc-card-num">02</div>
@@ -509,7 +507,7 @@
       </div>
       <div class="svc-card">
         <div class="svc-card-img">
-          <image-slot id="svc-3" placeholder="Local operations — office, team, logistics" shape="rect" style="width:100%;height:100%;"></image-slot>
+          <img src="uploads/img_v3_0211k_d92b18fc-92af-45c8-9f18-f16c5ccd70hu-ce328e3b.png" alt="Local Operations">
         </div>
         <div class="svc-card-body">
           <div class="svc-card-num">03</div>
@@ -519,7 +517,7 @@
       </div>
       <div class="svc-card">
         <div class="svc-card-img">
-          <image-slot id="svc-4" placeholder="Compliance — legal review, regulatory documents" shape="rect" style="width:100%;height:100%;"></image-slot>
+          <img src="uploads/pasted-1778581101986-0.png" alt="Compliance Guidance">
         </div>
         <div class="svc-card-body">
           <div class="svc-card-num">04</div>
@@ -538,13 +536,13 @@
       <div class="section-label" style="color:var(--gold);">Ready to Expand?</div>
       <h2>Take Your Business Global</h2>
       <p>Whether you're exploring a new market for the first time or scaling an existing international presence, Sky Innovation has the expertise and local knowledge to get you there.</p>
-      <a href="/cdn-cgi/l/email-protection#3d54535b527d4e5644545353524b5c49545253135e5250" class="cta-btn">
+      <a href="mailto:info@skyinnovation.com" class="cta-btn">
         Email Us
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </a>
     </div>
     <div class="cta-band-image">
-      <image-slot id="cta-img" placeholder="Global expansion — partnership, world skyline" shape="rect" style="width:100%;height:100%;"></image-slot>
+      <img src="uploads/pasted-1778581135383-0.png" alt="Global expansion">
     </div>
   </div>
 </div>
@@ -555,7 +553,7 @@
     <div class="section-label fade-up">Contact</div>
     <h2 class="section-heading fade-up">Get in Touch</h2>
     <p class="fade-up">Ready to take your business global? Contact us today to discover how Sky Innovation can support your international expansion.</p>
-    <a href="/cdn-cgi/l/email-protection#d8b1b6beb798abb3a1b1b6b6b7aeb9acb1b7b6f6bbb7b5" class="contact-cta fade-up">
+    <a href="mailto:info@skyinnovation.com" class="contact-cta fade-up">
       Email Us
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
     </a>
@@ -584,7 +582,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   const nav = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 10);
